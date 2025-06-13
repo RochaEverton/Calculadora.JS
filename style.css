@@ -1,52 +1,89 @@
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: block;
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    width: 50vw;         /* ocupa 50% da largura da tela */
+    min-width: 320px;    /* largura mínima para não quebrar */
+    max-width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    /* altura mínima para evitar scroll desnecessário */
+    min-height: 100vh;
 }
+
 header{
     width: 80%;
     text-align: center;
     background-color: #4CAF50;
     color: white;
+    margin: 0 auto;
+    padding: 10px 0; /* reduz altura */
 }
+
 main{
     display: grid;
-    gap: 10px;
+    gap: 8px; /* reduz espaço entre elementos */
     width: 80%;
     text-align: center;
-    margin-top: 20px;
-    margin: auto;
+    margin: 20px auto 0 auto; /* reduz espaço superior */
 }
 input{
     width: 100%;
-    height: 60px;
-    padding: 10px;
+    height: 40px; /* reduz altura */
+    padding: 6px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-    margin-top: 20px;
-    font-size: 30px;
+    margin-top: 10px; /* reduz espaço acima */
+    font-size: 22px; /* reduz fonte */
     text-align: right;
     background-color: #c4c4c4;}
 .buttons{
     display: grid;
-    gap: 10px;
+    gap: 8px; /* reduz espaço entre botões */
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 40px); /* reduz altura dos botões */
 }
 
 button{
-    padding: 10px;
+    padding: 6px;
     background-color: #a0a4ad;
     color: rgb(0, 0, 0);
     font-weight: 700;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    
+    font-size: 1em; /* reduz fonte */
+}
+
+button[onclick="result()"] {
+    grid-row: span 2; /* faz o botão = ocupar 2 linhas */
+    height: 100%;     /* garante que ocupe toda a altura das linhas */
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+@media (max-width: 900px) {
+    main, header {
+        width: 50vw;
+        min-width: 260px;
+        max-width: 100vw;
+    }
+}
+
+@media (max-width: 600px) {
+    main, header {
+        width: 50vw;
+        min-width: 180px;
+        max-width: 100vw;
+    }
+    header h2 {
+        display: none;
+    }
+    header h1 {
+        font-size: 1.3em;
+        margin-bottom: 0;
+    }
 }
