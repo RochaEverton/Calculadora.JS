@@ -122,10 +122,6 @@ button[onclick="result()"] {
         max-width: 90vw;
     }
 
-    header {
-        display: none;
-    }
-
     #displayHistory {
         height: 70px;
     }
