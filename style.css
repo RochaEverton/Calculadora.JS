@@ -1,52 +1,86 @@
-body{
+body {
     display: block;
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    margin: 0;
-    width: 50vw;         /* ocupa 50% da largura da tela */
-    min-width: 320px;    /* largura mínima para não quebrar */
+    background-color: #000000;
+    width: 50vw;
+    min-width: 320px;
     max-width: 100vw;
     margin-left: auto;
     margin-right: auto;
-    /* altura mínima para evitar scroll desnecessário */
     min-height: 100vh;
 }
 
-header{
+header {
+    height: 90px;
     width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    background-color: #4CAF50;
+    background-color: #234994;
     color: white;
     margin: 0 auto;
-    padding: 10px 0; /* reduz altura */
 }
 
-main{
+main {
+    background-color: black;
     display: grid;
-    gap: 8px; /* reduz espaço entre elementos */
+    gap: 4px;
     width: 80%;
     text-align: center;
-    margin: 20px auto 0 auto; /* reduz espaço superior */
+    margin: 10px auto 0 auto;
 }
-input{
+
+#display {
+    display: none;
+}
+
+p {
+    text-align: right;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1.7em;
+    margin: 0;
+    min-height: 1.5em;
+}
+
+#displayHistory {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 10px;
+    background-color: rgb(29, 28, 28);
+    height: 120px;
+    margin-bottom: 0;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 1px;
+}
+
+input {
     width: 100%;
-    height: 40px; /* reduz altura */
+    height: 50px;
     padding: 6px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-    margin-top: 10px; /* reduz espaço acima */
-    font-size: 22px; /* reduz fonte */
+    margin-top: 1px;
+    font-size: 22px;
     text-align: right;
-    background-color: #c4c4c4;}
-.buttons{
-    display: grid;
-    gap: 8px; /* reduz espaço entre botões */
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 40px); /* reduz altura dos botões */
+    background-color: #c4c4c4;
+    color: black
 }
 
-button{
+.buttons {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 40px);
+}
+
+button {
     padding: 6px;
     background-color: #a0a4ad;
     color: rgb(0, 0, 0);
@@ -54,36 +88,53 @@ button{
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1em; /* reduz fonte */
+    font-size: 1em;
 }
 
 button[onclick="result()"] {
-    grid-row: span 2; /* faz o botão = ocupar 2 linhas */
-    height: 100%;     /* garante que ocupe toda a altura das linhas */
-    background-color: #4CAF50;
+    grid-row: span 2;
+    height: 100%;
+    background-color: #234994;
     color: #fff;
     font-size: 1.2em;
 }
 
 @media (max-width: 900px) {
-    main, header {
+
+    main,
+    header {
         width: 50vw;
         min-width: 260px;
         max-width: 100vw;
     }
+
+    #display {
+        display: none;
+    }
 }
 
 @media (max-width: 600px) {
-    main, header {
-        width: 50vw;
-        min-width: 180px;
-        max-width: 100vw;
+
+    main,
+    header {
+        width: 90vw;
+        min-width: 120px;
+        max-width: 90vw;
     }
-    header h2 {
+
+    header {
         display: none;
     }
-    header h1 {
-        font-size: 1.3em;
-        margin-bottom: 0;
+
+    #displayHistory {
+        height: 70px;
+    }
+
+    #displayHistory p {
+        font-size: 1em;
+    }
+
+    #display {
+        display: none;
     }
 }
