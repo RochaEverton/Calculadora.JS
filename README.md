@@ -1,4 +1,4 @@
-# Calculadora JavaScript
+# Calculadora.JS
 
 Uma calculadora desenvolvida com HTML, CSS e JavaScript puro.
 
@@ -6,7 +6,7 @@ Uma calculadora desenvolvida com HTML, CSS e JavaScript puro.
 
 ## 💡 Sobre o projeto
 
-**CalculatorJS** é um projeto pessoal com o objetivo de praticar conceitos de JavaScript, manipulação do DOM e lógica de programação. A calculadora realiza operações matemáticas básicas de forma responsiva e interativa.
+**Calculadora.JS** é um projeto pessoal com o objetivo de praticar conceitos de JavaScript, manipulação do DOM e lógica de programação. A calculadora realiza operações matemáticas básicas de forma responsiva e interativa.
 
 ## ✨ Funcionalidades
 
