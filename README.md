@@ -12,7 +12,6 @@ Esta é a versão **refatorada** de uma calculadora originalmente desenvolvida c
 <div style="display: flex; gap: 30px; flex-wrap: wrap;">
 
   <img src="./calculator/public/antiga.png" alt="Calculadora JavaScript" width="300" style="border: 3px solid gray; border-radius: 8px;">
-
   <img src="./calculator/public/nova.png" alt="Calculadora Next.js" width="300" style="border: 3px solid gray; border-radius: 8px;">
 
 </div>
@@ -24,7 +23,7 @@ Esta é a versão **refatorada** de uma calculadora originalmente desenvolvida c
 
 Para utilizar a calculadora clique no link abaixo:
 
-<a href="https://calculadora-5b6gd8yhe-everton-rochas-projects.vercel.app/" target="_blank" rel="noopener noreferrer" style="font-size: 30px">
+<a href="https://calculadora-5b6gd8yhe-everton-rochas-projects.vercel.app/" target="_blank" rel="noopener noreferrer">
   Calculadora
 </a>
 
