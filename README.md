@@ -24,7 +24,9 @@ Esta é a versão **refatorada** de uma calculadora originalmente desenvolvida c
 
 Para utilizar a calculadora clique no link abaixo:
 
-https://calculadora-5b6gd8yhe-everton-rochas-projects.vercel.app/
+<a href="https://calculadora-5b6gd8yhe-everton-rochas-projects.vercel.app/" target="_blank" rel="noopener noreferrer" style="font-size: 30px">
+  Calculadora
+</a>
 
 ---
 
