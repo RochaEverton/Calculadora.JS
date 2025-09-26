@@ -17,7 +17,7 @@ const Title = styled.h1`
 export default function Header() {
   return (
     <HeaderContainer>
-      <Title>Calculator</Title>
+      <Title>Calculadora</Title>
       <Image src="/LOGO.png" alt="Logo" width={50} height={50} />
     </HeaderContainer>
   );
